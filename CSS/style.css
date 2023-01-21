@@ -386,7 +386,6 @@ input:focus {
 
 .app .list .tasks .task {
   color: var(--Bright-Blue);
-  word-break: break-all;
   padding: 20px 50px;
   position: relative;
   cursor: pointer;
