@@ -1,6 +1,5 @@
 # Todo-List
 
-# Todo app
 
 
 ## Table of contents
