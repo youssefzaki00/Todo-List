@@ -11,7 +11,13 @@
 <link rel="icon" type="image/png" sizes="32x32" href="CSS/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="CSS/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
+  <!-- favicons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="todo-app-main/images/redketchup/favicon-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="todo-app-main/images/redketchup/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="todo-app-main/images/redketchup/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="todo-app-main/images/redketchup/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="todo-app-main/images/redketchup/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
   <!-- render all elements normally -->
   <link rel="stylesheet" href="CSS/normalize.css" />
   <!-- Font awesome  -->
@@ -22,6 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,7 +38,6 @@
     <div class="header">
       <div class="image">
         <img src="todo-app-main/images/bg-desktop-light.jpg" alt="" class="light">
-
       </div>
       <div class="title">
         <h2>todo</h2>
@@ -43,11 +49,11 @@
       <div class="add">
         <div class="submit"><i class="fa-solid fa-check"></i></div>
         <input type="text" pattern="[a-zA-Z0-9,#.-]+" required placeholder="Create a new todo...">
+        <div class="submitting"><i class="fa-solid fa-paper-plane"></i></div>
       </div>
     </div>
     <div class="list">
-      <div class="tasks">
-      </div>
+      <div class="tasks"></div>
       <div class="stats">
         <div class="count"><span>0</span> items left</div>
         <div class="filter">
