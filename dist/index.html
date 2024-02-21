@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/assets/android-chrome-192x192-CZoN0pwy.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32-AmqCgwGG.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16-D60vPwvG.png"
+    />
+    <link rel="manifest" href="/assets/site-Cj60PPBt.webmanifest" />
+    <!-- favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./images/redketchup/favicon-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/redketchup/favicon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon-DlJYpwlL.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32-AmqCgwGG.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16-D60vPwvG.png"
+    />
+    <link rel="manifest" href="/assets/site-Cj60PPBt.webmanifest" />
+    <!-- render all elements normally -->
+    <!-- Font awesome  -->
+    <!-- main css style -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-DHDxL2uL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJLTGREM.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="image">
+          <img src="/assets/bg-desktop-light-BIdKokTn.jpg" alt="" class="light" />
+        </div>
+        <div class="title">
+          <h2>todo</h2>
+          <div class="icon">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%3e%3cpath%20fill='%23FFF'%20fill-rule='evenodd'%20d='M13%200c.81%200%201.603.074%202.373.216C10.593%201.199%207%205.43%207%2010.5%207%2016.299%2011.701%2021%2017.5%2021c2.996%200%205.7-1.255%207.613-3.268C23.22%2022.572%2018.51%2026%2013%2026%205.82%2026%200%2020.18%200%2013S5.82%200%2013%200z'/%3e%3c/svg%3e" class="moon active-icon" />
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='26'%20height='26'%3e%3cpath%20fill='%23FFF'%20fill-rule='evenodd'%20d='M13%2021a1%201%200%20011%201v3a1%201%200%2011-2%200v-3a1%201%200%20011-1zm-5.657-2.343a1%201%200%20010%201.414l-2.121%202.121a1%201%200%2001-1.414-1.414l2.12-2.121a1%201%200%20011.415%200zm12.728%200l2.121%202.121a1%201%200%2001-1.414%201.414l-2.121-2.12a1%201%200%20011.414-1.415zM13%208a5%205%200%20110%2010%205%205%200%20010-10zm12%204a1%201%200%20110%202h-3a1%201%200%20110-2h3zM4%2012a1%201%200%20110%202H1a1%201%200%20110-2h3zm18.192-8.192a1%201%200%20010%201.414l-2.12%202.121a1%201%200%2001-1.415-1.414l2.121-2.121a1%201%200%20011.414%200zm-16.97%200l2.121%202.12A1%201%200%20015.93%207.344L3.808%205.222a1%201%200%20011.414-1.414zM13%200a1%201%200%20011%201v3a1%201%200%2011-2%200V1a1%201%200%20011-1z'/%3e%3c/svg%3e" class="sun" />
+          </div>
+        </div>
+        <div class="add">
+          <div class="submit"><i class="fa-solid fa-check"></i></div>
+          <input
+            type="text"
+            pattern=""
+            required
+            placeholder="Create a new todo..."
+          />
+          <div class="submitting"><i class="fa-solid fa-paper-plane"></i></div>
+          <button class="cancelEdit">Cancel Edit</button>
+        </div>
+      </div>
+      <div class="list">
+        <div class="tasks"></div>
+        <div class="emptyTasks">
+          <img src="/assets/calendario69-CRYP-aBT.jpg" alt="" />
+        </div>
+        <div class="stats">
+          <div class="count"><span>0</span> items left</div>
+          <div class="filter">
+            <div class="all choosen ele">All</div>
+            <div class="active ele">Active</div>
+            <div class="completed ele">Completed</div>
+          </div>
+          <div class="clear">Clear Completed</div>
+        </div>
+      </div>
+      <div class="sign">Made by@ Youssef Zaki</div>
+      <div class="up" id="up-scroll">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </div>
+      <div class="down" id="down-scroll">
+        <i class="fas fa-long-arrow-alt-down"></i>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+  </body>
+</html>
