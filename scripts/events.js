@@ -10,7 +10,7 @@ import {
 } from './utilties';
 
 const callEvents = (mode) => {
-  let arr = getArray() || [];
+  const arr = getArray() || [];
   const drake = dragula([tasks]);
   window.onscroll = () => {
   // up button
@@ -72,12 +72,14 @@ const callEvents = (mode) => {
     }
   });
   drake.on('drop', () => {
-    // Handle the drop event (e.g., save the new order of tasks)
+    let Arr = getArray();
+
     const updatedOrder = Array.from(tasks.children)
       .map((taskElement) => parseInt(taskElement.dataset.id, 10));
-    // Update the order in your data array and save it
-    arr = arr.sort((a, b) => updatedOrder.indexOf(a.id) - updatedOrder.indexOf(b.id));
-    saveData(arr);
+
+    Arr = Arr.sort((a, b) => updatedOrder.indexOf(a.id) - updatedOrder.indexOf(b.id));
+    saveData(Arr);
+    appendTask(Arr);
   });
 };
 export default callEvents;

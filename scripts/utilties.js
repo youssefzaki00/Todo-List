@@ -1,6 +1,7 @@
 import {
   add, all, app, completed, countSpan, list, down, filter,
-  icon, image, clear, count, img, input, moon, sun, task, tasks, submitText, cancelEdit, active,
+  icon, image, clear, count, img, input, moon, sun,
+  task, tasks, submitText, cancelEdit, active,
 } from './elements';
 
 // const mode = localStorage.getItem('Mode');
@@ -30,6 +31,7 @@ export function checkDown() {
 export function getData() {
   arr = JSON.parse(localStorage.getItem('Tasks'));
   appendTask(arr);
+  console.log('from getData', arr);
 }
 export function getArray() {
   const array = JSON.parse(localStorage.getItem('Tasks'));
@@ -74,14 +76,15 @@ export function addToArr(text) {
     completed: false,
   };
   arr.push(data);
-  saveData();
+
+  saveData(arr);
   appendTask(arr);
 }
 export function deleteTask(taskId) {
   const taskToBeRemoved = arr.find((e) => e.id == taskId);
   arr.splice(arr.findIndex((a) => a.id === taskToBeRemoved.id), 1);
 
-  saveData();
+  saveData(arr);
   countTasks();
   emptyList();
   checkComplete();
@@ -166,7 +169,6 @@ export function taskStatus(taskId) {
     checkDown();
   }
 }
-
 export function editTask(taskId) {
   let taskToEdit = arr.find((Task) => Task.id == taskId);
   let taskIndex = arr.findIndex((Task) => Task.id == taskId);
